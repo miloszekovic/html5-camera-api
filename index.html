@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mogul Camera API</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="initial-scale=1.0; user-scalable=no" />
+        <meta name="HandheldFriendly" content="true" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+        <script src="js/modernizr.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>Camera API</h1>
+
+            <section class="main-content">
+            
+                <div class="button-wrapp">
+                	<input type="file" name="take-picture" id="take-picture" class="inputfile" accept="image/*" />
+					<label for="take-picture"><span>Take a picture</span></label>
+                </div>
+
+                <h2>Preview:</h2>
+                <div class="img-preview">
+                    <img src="images/holder.png" alt="" id="show-picture">
+                </div>
+
+                <p id="error"></p>
+            
+            </section>
+            
+        </div>
+	
+    	<!-- scripts need to be here, not in head -->
+		<script src="js/base.js"></script>
+        <script src="js/custom-file-input.js"></script>
+
+    </body>
+</html>

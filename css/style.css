@@ -1,0 +1,91 @@
+html, body, div, span, section, article, header, footer, nav, aside, hgroup, h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, b, u, i, ol, ul, li, fieldset, form, label, select, option, input, textarea, table, tr, td, th, dl, dd, dt { 
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body { 
+	background:#222;
+	font-size:16px;
+	color:#f9f9f9;
+}
+
+body, input, textarea { 
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#fff;
+}
+h1 { margin-bottom:20px; }
+h2 { margin: 30px 0 10px 0; }
+
+.clear { 
+	display: block;
+	clear: both;
+}
+
+.container {
+    width: 768px;
+	margin: 0 auto;
+	padding:20px;
+}
+
+.img-preview img {
+	width:100%;
+	height:auto;
+}
+
+.button-wrapp {
+	position: relative;
+}
+
+/* input-file style */
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    width:100%;
+	font-size:18px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+	text-align:center;
+	background:#3891f7;
+	padding:15px 0;
+	color:#fff;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+.inputfile + label:hover, .inputfile + label:active {
+	background:#499bf9;
+	color:#dbeafb;
+}
+.no-js .inputfile + label {
+    display: none;
+}
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+/* END input-file style */
+
+#error {
+    color: #f00;
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+    }
+}
